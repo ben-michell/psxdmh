@@ -1,0 +1,9 @@
+*.log
+*.in
+*.in~
+*.wav
+*.mp3
+.DS_Store
+.~lock*
+*.swp
+

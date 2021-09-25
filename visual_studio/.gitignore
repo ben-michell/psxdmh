@@ -1,0 +1,9 @@
+*.sdf
+*.opensdf
+*.suo
+*.user
+Debug/
+Release/
+ipch/
+.vs/
+x64/

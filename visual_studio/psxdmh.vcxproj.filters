@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{4213828b-eafd-49e5-83ad-793552883a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{c7bab647-0247-4427-8215-0c8ab051aaae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player">
+      <UniqueIdentifier>{ac63cc34-ff80-4a08-b72c-7ec6346f1f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spu">
+      <UniqueIdentifier>{ccc6aa0c-c8b4-49b5-a883-91ebaa46cdbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{f772048c-8e4f-40e7-ac64-ea7e77f767fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{48b7c1d7-74b1-432b-803a-b6c56d57a66f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\global.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\options.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\extract_audio.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\version.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\filter.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\module.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\normalizer.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\resampler.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sample.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\silencer.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\splitter.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\statistics.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\volume.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wav_file.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lcd_file.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\music_stream.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\song_player.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\track_player.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wmd_file.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\adpcm.h">
+      <Filter>spu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\channel.h">
+      <Filter>spu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\envelope.h">
+      <Filter>spu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\reverb.h">
+      <Filter>spu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\command_line.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\endian.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\enum_dir.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\safe_file.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utility.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\message.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\options.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\psxdmh.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\extract_audio.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\resampler.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lcd_file.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\music_stream.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\song_player.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\track_player.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wmd_file.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\adpcm.cpp">
+      <Filter>spu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\channel.cpp">
+      <Filter>spu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\envelope.cpp">
+      <Filter>spu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\reverb.cpp">
+      <Filter>spu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\command_line.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\enum_dir.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\safe_file.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utility.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\message.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\LICENSE.txt">
+      <Filter>doc</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="..\doc\curiosities.md">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="..\doc\music.md">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="..\doc\source.md">
+      <Filter>doc</Filter>
+    </None>
+  </ItemGroup>
+</Project>
