@@ -39,7 +39,7 @@
 // Version number.
 #define PSXDMH_VERSION_MAJOR    2
 #define PSXDMH_VERSION_MINOR    1
-#define PSXDMH_VERSION_DOT      0
+#define PSXDMH_VERSION_DOT      1
 
 
 // Version number in string form.

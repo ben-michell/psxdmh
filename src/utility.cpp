@@ -269,6 +269,23 @@ word_wrap(std::string text, size_t indent, size_t width)
 
 
 //
+// Retrieve the current time with high precision.
+//
+
+double
+time_now()
+{
+    static auto base = std::chrono::steady_clock::now();
+    auto now = std::chrono::steady_clock::now();
+    std::chrono::duration<double> diff = now - base;
+    return diff.count();
+}
+
+
+//  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+//
 // Combine file system paths.
 //
 

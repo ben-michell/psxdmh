@@ -21,6 +21,7 @@
 
 
 #include "module.h"
+#include "utility.h"
 
 
 namespace psxdmh
@@ -73,7 +74,7 @@ public:
         // extraction.
         if (m_samples++ == 0)
         {
-            m_start_time = clock();
+            m_start_time = time_now();
         }
         bool live = this->source()->next(s);
 
@@ -94,11 +95,11 @@ public:
             // Update the extraction rate every half wall second.
             m_samples_until_next_second = m_rate;
             uint32_t song_seconds = uint32_t(m_samples / m_rate);
-            clock_t elapsed = clock() - m_start_time;
-            uint32_t elapsed_half_seconds = uint32_t(2 * elapsed / CLOCKS_PER_SEC);
+            double elapsed = time_now() - m_start_time;
+            uint32_t elapsed_half_seconds = uint32_t(floor(2 * elapsed));
             if (elapsed_half_seconds != m_last_rate_time)
             {
-                m_extraction_rate = clamp(double(song_seconds) / (double(elapsed) / CLOCKS_PER_SEC), 0.0, 1000000.0);
+                m_extraction_rate = clamp(double(song_seconds) / elapsed, 0.0, 1000000.0);
                 m_last_rate_time = elapsed_half_seconds;
             }
 
@@ -136,7 +137,7 @@ private:
     std::string m_callback_operation;
 
     // Time when the first sample was processed.
-    clock_t m_start_time;
+    double m_start_time;
 
     // Elapsed seconds when the extraction rate was last calculated.
     uint32_t m_last_rate_time;

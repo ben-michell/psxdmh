@@ -97,6 +97,14 @@ extern std::string word_wrap(std::string text, size_t indent, size_t width);
 //  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
+// Retrieve the current time with high precision. The datum is not defined, so
+// this is only of use for determining relative time.
+double time_now();
+
+
+//  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
 // Types of files.
 enum class file_type
 {
